@@ -1,1 +1,39 @@
-{     "devDependencies": {         "is-glob": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-is-glob",     "homepage": "https://github.com/npmdoc/node-npmdoc-is-glob",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-is-glob.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [is-glob (v3.1.0)](https://github.com/jonschlinkert/is-glob) [![npm package](https://img.shields.io/npm/v/npmdoc-is-glob.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-is-glob) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-is-glob.svg)](https://travis-ci.org/npmdoc/node-npmdoc-is-glob)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "is-glob": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-is-glob",
+    "keywords": [
+        "documentation",
+        "is-glob"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_is_glob.js",
+    "name": "npmdoc-is-glob",
+    "nameAlias": "npmdoc_is_glob",
+    "nameOriginal": "npmdoc-is-glob",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-is-glob.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
