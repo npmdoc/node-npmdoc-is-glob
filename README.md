@@ -1,4 +1,7 @@
-# api documentation for  [is-glob (v3.1.0)](https://github.com/jonschlinkert/is-glob)  [![npm package](https://img.shields.io/npm/v/npmdoc-is-glob.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-is-glob) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-is-glob.svg)](https://travis-ci.org/npmdoc/node-npmdoc-is-glob)
+# npmdoc-is-glob
+
+#### basic api documentation for  [is-glob (v3.1.0)](https://github.com/jonschlinkert/is-glob)  [![npm package](https://img.shields.io/npm/v/npmdoc-is-glob.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-is-glob) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-is-glob.svg)](https://travis-ci.org/npmdoc/node-npmdoc-is-glob)
+
 #### Returns `true` if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a bet
 
 [![NPM](https://nodei.co/npm/is-glob.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/is-glob)
@@ -122,7 +125,8 @@
             "vinyl"
         ]
     },
-    "version": "3.1.0"
+    "version": "3.1.0",
+    "bin": {}
 }
 ```
 
